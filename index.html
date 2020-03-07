@@ -248,6 +248,301 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/07/%E4%BB%80%E4%B9%88%E6%98%AF%E5%85%89%E7%BA%BF%E8%BF%BD%E8%B8%AA/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="PanXinQiang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="My world">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/03/07/%E4%BB%80%E4%B9%88%E6%98%AF%E5%85%89%E7%BA%BF%E8%BF%BD%E8%B8%AA/" itemprop="url">什么是光线追踪</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-03-07T23:01:32+08:00">
+                2020-03-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%9F%A5%E8%AF%86/" itemprop="url" rel="index">
+                    <span itemprop="name">知识</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>&#8195;&#8195;这是一个很难回答的问题，它的概念根据上下文不同，可能是某个具体的实现技术，也可能是一个框架的总称，一般来说，我们总是喜欢把它和另外一个概念：光栅化渲染作为相对的两个概念。</p>
+<p>&#8195;&#8195;熟悉实时图形学的同学都知道，现代的游戏渲染引擎都是以光栅化渲染为基本框架搭建的：一个复杂的场景的渲染任务会以物体为单位划分为若干个子任务，每个物体由若干三角面组成，我们将这些三角面经过几何变换映射到屏幕的某些区域，然后将三角面覆盖的区域拆解成一个个的像素，这个拆解的过程就叫做光栅化。在这个逐层拆解的过程中，下一层就会失去对上一层全局信息的了解，比如拆分成物体后，我们就不知道场景里其他物体的存在了，拆分成三角面后，我们就无法得知其他三角面的信息，到对每个像素进行着色时，我们连该像素所在的三角形的信息也丢失了。这样拆解任务可以让渲染过程高度并行化，所以非常的快，但是同时因为全局信息的丢失，我们很难实现一些需要全局信息的渲染效果。</p>
+<p>&#8195;&#8195;与之相对的，近年来渲染技术的发展，多半是围绕全局照明效果的，譬如环境光遮蔽，间接反射，漫射等。这些技术五花八门，实现方法完全没有一个统一的框架可以遵循，也导致了近年来游戏引擎的设计越来越复杂。而早在上个世纪，在离线渲染领域，这些技术就已经有了统一的解决框架，即光线追踪。</p>
+<p>&#8195;&#8195;与光栅化渲染不一样的是，光线追踪把一个场景的渲染任务拆分成了从摄像机出发的若干条光线对场景的影响，这些光线彼此不知道对方，但却知道整个场景的信息。每条光线会和场景并行地求交，根据交点位置获取表面的材质、纹理等信息，并结合光源信息计算光照。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/07/Blender%E6%98%AF%E4%BB%80%E4%B9%88/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="PanXinQiang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="My world">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/03/07/Blender%E6%98%AF%E4%BB%80%E4%B9%88/" itemprop="url">Blender是什么</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-03-07T22:59:41+08:00">
+                2020-03-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%9F%A5%E8%AF%86/" itemprop="url" rel="index">
+                    <span itemprop="name">知识</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Blender是什么"><a href="#Blender是什么" class="headerlink" title="Blender是什么?"></a>Blender是什么?</h1><p>&#8195;&#8195;Blender是一款免费和开源的3D动画软件。<br>&#8195;&#8195;最初，这个程式是被荷兰的一个动画工作室NeoGeo设计为内部使用的程式。但后来NeoGeo被收购，其主要程式设计者彤·罗森达尔于1998年6月成立Not a Number Technologies（NaN）公司，将其进一步发展，并以共享软体的形式对外发布这个程式，直到NaN公司于2002年宣告破产。<br>&#8195;&#8195;在经过债权人同意后，Blender缴付一次性报酬十万欧元后变为自由软体，并以GNU通用公共许可证发布。在2002年7月18日，彤·罗森达尔开始为Blender筹集资金；同年9月7日，Blender宣布筹集足够资金，并将其源码对外公布。因此，Blender现在是自由软体，并由Blender基金会维护与更新。</p>
+<h2 id="8195-8195-Blender支持的格式"><a href="#8195-8195-Blender支持的格式" class="headerlink" title="&#8195;&#8195;Blender支持的格式"></a>&#8195;&#8195;Blender支持的格式</h2><p>&#8195;&#8195;支持自身所用.blend之外的多种通用3D格式。</p>
+<h3 id="8195-8195-导入"><a href="#8195-8195-导入" class="headerlink" title="&#8195;&#8195;导入"></a>&#8195;&#8195;导入</h3><p>　　Collada（.dae）Motion Capture（.bvh）Scalable Vector Graphics（.svg）Stanford（.ply）Stl（.stl）Autodesk 3ds Max（.3ds）Autodesk FBX（.fbx）Wavefront（.obj）X3D Extensible 3D（.x3d）<br>导出<br>　　Collada（.dae）Stanford（.ply）Stl（.stl）Autodesk 3ds Max（.3ds）Autodesk FBX（.fbx）Wavefront（.obj）X3D Extensible 3D（.x3d）</p>
+<h2 id="8195-8195-使用Blender的作品"><a href="#8195-8195-使用Blender的作品" class="headerlink" title="&#8195;&#8195;使用Blender的作品"></a>&#8195;&#8195;使用Blender的作品</h2><p>&#8195;&#8195;国家航空航天局 （NASA）为火星探测车“好奇”着陆三周年纪念日作出了交互web-软件。探测车的动作、摄影机和机械手的操纵是基于 Blender 和 Blend4Web 创造的软件实现的，也打了一些著名的使命事件。软件是在SIGGRAPH2015大会WebGL部分的开始在年提出的。<br>&#8195;&#8195;第一套使用Blender专业影片是蜘蛛侠2，在该片制作中用来绘制分镜脚本。<br>&#8195;&#8195;Blender参与制作的有很多，比如《高堡奇人》《行尸走肉》《魔兽》等。<br>&#8195;&#8195;全由Blender制作的电影，Blender基金会的开源电影以及最近的《未来机器城》。</p>
+<h1 id="为什么要学习Blender"><a href="#为什么要学习Blender" class="headerlink" title="为什么要学习Blender"></a>为什么要学习Blender</h1><h2 id="开源免费"><a href="#开源免费" class="headerlink" title="开源免费"></a>开源免费</h2><p>&#8195;&#8195;对于个人三维用户来说，一款正版的三维软件价格太过昂贵，使用盗版就面临着被软件开发公司发律师涵的风险，虽然一般情况下软件公司不会针对个人用户，但是如果你的作品引起了较大的关注，就可能会面临这样的风险，以Autodesk的软件Max和Maya为例，使用盗版软件制作的作品，知识产权并不属于你，购买学生版的软件，是不能够进行商业用途的，只能学习，并且Autodesk公司有权利直接打开你的电脑查看你的东西。<br>&#8195;&#8195;对于公司来说，公司是软件公司重点关照的地方，软件的收入基本都是来自公司购买的正版，一旦你的公司稍微做大或者是引起不好，电话和律师涵可能马上就到，公司只能去花钱购买或者停止使用软件，除非你的公司装有这些软件的电脑是不链接网络的，这样可能入软件公司就查不到你了。<br>&#8195;&#8195;但是Blender不同，GUN许可证可以说是完全为了用户，你可以免费使用Blender，软件开源；网上有传言说Blender制作的东西也需要开源，这是错误的，你使用Blender制作的作品是可以用于商业用途，产权属于用户，在这个版权越来越重要的年代，Blender的优势会越来越明显。</p>
+<h2 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h2><p>&#8195;&#8195;Blender拥有世界上最活跃的社区，Blender的开源的资金是来自于社区用户，可以说开源的Blendrr诞生于众筹，以用户为中心，开发Blender的人最初就是一个艺术家，他们不关心这个程序的代码好不好看，只要代码有效，能够达到自己的目的，那么这个代码就是可以用的。Blender的更新内容一般都是根据基金会每隔一段时间制作的开源电影，针对电影这种综合实际项目中遇到的问题来进行更新，还有就是根据社区反馈的意见。Blender可以说是最在乎用户意见的软件，因为它诞生于用户，目前的开发资金来源也是来自于公司以及个人用户的赞助。写在Blender开发计划里的东西可能会因为资金和技术的问题推迟，但一定会实现。</p>
+<h2 id="渲染"><a href="#渲染" class="headerlink" title="渲染"></a>渲染</h2><p>&#8195;&#8195;Blender2.79b版本中带有几个渲染器，Blender渲染，Blender游戏，Cycles渲染以及OpenGL，一般使用的是Cycles渲染器。<br>&#8195;&#8195;Cycles渲染器是一款无偏差的物理渲染器，支持GPU渲染，CUDA和OpenCL均可，效果与CPU渲染相同，支持PBR流程，采用的是与Maxwell，Arnold相同的路径追踪算法，无偏差渲染的优点在于效果好，全部按照物理计算，缺点在于速度较慢，但是Cycles已经支持GPU计算，所以在速度上相比其他仅支持CPU的渲染器要快许多，但是不敌Redshift这类有偏差GPU渲染器。<br>&#8195;&#8195;Blender 2.8移除Blender游戏，添加Eevee渲染引擎，与Cycles渲染器不同，Eevee并不是通过光线追踪来进行计算的，使用的是类似游戏引擎的计算方式，基本上支持所有渲染器可以做到的效果，渲染速度极快，渲染大图可以做到以秒为单位的渲染速度，和Cycles渲染器的材质通用，缺点磨人的效果比不上光线追踪渲染器，光照的效果可能会出错，对于折射和反射需要添加类似游戏引擎的反射探针，进行烘培。</p>
+<h2 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h2><p>&#8195;&#8195;Blender自带很多插件，只需要在设置里勾选上就可以开启（记得点击保存用户设置），一些第三方插件可以通过Blendrmaker网站购买，也有很多第三方的插件开发者喜欢Blender的开源免费，所以也有很多免费的第三方插件。</p>
+<h2 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h2><p>&#8195;&#8195;可以通过斑斓中国（blendercn.org）来获取教程，教程十分的详细，基本可以让一个从来没有接触过建模软件的人学会Blender的基础，视频分布在B站，优酷，西瓜视频等平台，目前网上很多教育机构例如饼干教育，教程的价格较高，并且内容也是教基础，不推荐付费进行学习基础教程，基础可以从社区教程学习，当你需要学习进阶内容的时候可以选择进行付费学习，最近aboutcg也开始针对Blender制作教程，在我看来价格还算可以。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/07/%E8%BF%87%E8%BD%BD%E6%97%B6%E4%BB%A3%E7%9A%84%E4%BF%A1%E6%81%AF%E4%BF%AE%E5%85%BB/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -687,7 +982,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/07/substance%20painter%E5%AF%BC%E5%87%BAvray%E8%B4%B4%E5%9B%BE%E5%9C%A8vray%E4%B8%AD%E7%9A%84%E6%AD%A3%E7%A1%AE%E8%BF%90%E7%94%A8/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/07/Substance%20painter%E5%AF%BC%E5%87%BAvray%E8%B4%B4%E5%9B%BE%E5%9C%A8vray%E4%B8%AD%E7%9A%84%E6%AD%A3%E7%A1%AE%E8%BF%90%E7%94%A8/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="PanXinQiang">
@@ -706,7 +1001,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2020/03/07/substance%20painter%E5%AF%BC%E5%87%BAvray%E8%B4%B4%E5%9B%BE%E5%9C%A8vray%E4%B8%AD%E7%9A%84%E6%AD%A3%E7%A1%AE%E8%BF%90%E7%94%A8/" itemprop="url">substance painter导出vray贴图在vray中的正确运用</a></h1>
+                <a class="post-title-link" href="/2020/03/07/Substance%20painter%E5%AF%BC%E5%87%BAvray%E8%B4%B4%E5%9B%BE%E5%9C%A8vray%E4%B8%AD%E7%9A%84%E6%AD%A3%E7%A1%AE%E8%BF%90%E7%94%A8/" itemprop="url">Substance painter导出vray贴图在vray中的正确运用</a></h1>
         
 
         <div class="post-meta">
@@ -1008,7 +1303,7 @@
               
                 <a href="/archives/%7C%7C%20archive">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1030,7 +1325,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
